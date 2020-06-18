@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data >
+        <import type="android.view.View" />
+        <import type="androidx.lifecycle.MutableLiveData"/>
+        <import type="com.malynkina.core.feature.util.CurrencyUtilKt"/>
+
+        <variable
+            name="currencyCode"
+            type="String" />
+
+        <variable
+            name="convertedValue"
+            type="MutableLiveData&lt;String&gt;" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/currencyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/flagView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:currencyFlag="@{currencyCode}"
+            tools:src="@drawable/ic_currency_usd" />
+
+        <TextView
+            android:id="@+id/currencyCodeView"
+            style="@style/AppTheme.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginTop="@dimen/spacing_16"
+            app:layout_constraintStart_toEndOf="@+id/flagView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@{currencyCode}"
+            tools:text="USD" />
+
+        <TextView
+            android:id="@+id/currencyNameView"
+            style="@style/AppTheme.Desription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/feature_currencyconverter_currency_name_width"
+            android:layout_marginStart="@dimen/spacing_16"
+            android:layout_marginEnd="@dimen/spacing_8"
+            android:layout_marginBottom="@dimen/spacing_12"
+            app:layout_constraintStart_toEndOf="@+id/flagView"
+            app:layout_constraintTop_toBottomOf="@+id/currencyCodeView"
+            android:text="@{CurrencyUtilKt.getCurrencyName(currencyCode)}"
+            tools:text="Indonezian Rupiah" />
+
+
+        <EditText
+            android:id="@+id/currencyRateView"
+            style="@style/AppTheme.EditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/spacing_8"
+            android:layout_marginEnd="@dimen/spacing_16"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/currencyNameView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            android:text="@={convertedValue}"
+            tools:text="1183000000.06" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

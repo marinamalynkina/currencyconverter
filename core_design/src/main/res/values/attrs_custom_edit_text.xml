@@ -1,0 +1,22 @@
+<resources>
+
+    <declare-styleable name="FormattedEditText">
+        <attr name="android:inputType"/>
+        <attr name="android:maxLines"/>
+        <attr name="android:maxLength"/>
+        <attr name="android:textAllCaps"/>
+        <attr name="android:imeOptions"/>
+        <attr name="mask" format="string"/>
+        <attr name="mask_hint" format="string"/>
+        <attr name="pattern" format="string"/>
+        <attr name="mask_visibility" format="enum">
+            <enum name="visible" value="0"/>
+            <enum name="hint" value="1"/>
+            <enum name="mask_hint" value="2"/>
+        </attr>
+        <attr name="mask_input_character" format="string"/>
+        <attr name="postfix" format="string"/>
+        <attr name="first_letter_upper_case" format="boolean"/>
+    </declare-styleable>
+
+</resources>

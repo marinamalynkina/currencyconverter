@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="network_error__NO_CONNECTION">Нет связи с сервером. Проверьте настройки интернет-соединения и попробуйте повторить операцию.</string>
+    <string name="network_error__SOCKET_TIMEOUT">@string/network_error__NO_CONNECTION</string>
+    <string name="network_error__SOCKET_CLOSED">@string/network_error__NO_CONNECTION</string>
+    <string name="network_error__CONNECTION_REFUSED">@string/network_error__NO_CONNECTION</string>
+    <string name="network_error__SSL">Нет связи с сервером, ошибка SSL.</string>
+    <string name="network_error__SSL_NO_PEER_CERTIFICATE">@string/network_error__SSL</string>
+    <string name="network_error__UNKNOWN_HOST">@string/network_error__NO_CONNECTION</string>
+    <string name="network_error__UNKNOWN">@string/network_error__NO_CONNECTION</string>
+
+</resources>

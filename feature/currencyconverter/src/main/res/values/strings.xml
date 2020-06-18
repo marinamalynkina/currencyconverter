@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="feature_currencyconverter_toolbar_title">Rates</string>
+    <string name="feature_currencyconverter_outdated">Conversion rates might be outdated.</string>
+    <string name="feature_currencyconverter_swipedown">Or swipe down to try again.</string>
+
+</resources>

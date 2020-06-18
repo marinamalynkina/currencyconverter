@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorPrimaryWhite</color>
+    <color name="colorPrimaryDark">#ff0666eb</color>
+    <color name="colorAccent">#ff0666eb</color>
+    <color name="colorError">#FF4F4F</color>
+
+    <color name="colorPrimaryWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPrimaryBlack">#191C1F</color>
+    <color name="colorPrimaryGrey50">#8B959E</color>
+    <color name="colorPrimaryGrey60">#33000000</color>
+    <color name="colorPrimaryGrey80">#CED5DB</color>
+    <color name="colorPrimaryGreyLight">#EAEAEA</color>
+
+</resources>

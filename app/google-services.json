@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "644465108362",
+    "firebase_url": "https://mm-projects-606b5.firebaseio.com",
+    "project_id": "mm-projects-606b5",
+    "storage_bucket": "mm-projects-606b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644465108362:android:1d8ebb14a49da080cb5473",
+        "android_client_info": {
+          "package_name": "com.malynkina.currencyconverter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "644465108362-flpr38klskmk8frfd3sha1qmc4q154bq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoAfYuGgtk_Xmtt2SeqqH5hOryEogi1aQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "644465108362-flpr38klskmk8frfd3sha1qmc4q154bq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

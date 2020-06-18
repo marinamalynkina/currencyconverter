@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="network_error__NO_CONNECTION">No Internet connection.\nPlease check your Internet connection.</string>
+    <string name="network_error__SOCKET_TIMEOUT">Oops, something went wrong. Please check your Internet connection.</string>
+    <string name="network_error__SOCKET_CLOSED">@string/network_error__SOCKET_TIMEOUT</string>
+    <string name="network_error__CONNECTION_REFUSED">@string/network_error__SOCKET_TIMEOUT</string>
+
+    <string name="network_error__SSL">No Intervet connection. Certificate Error.</string>
+    <string name="network_error__SSL_NO_PEER_CERTIFICATE">@string/network_error__SSL</string>
+
+    <string name="network_error__UNKNOWN_HOST">@string/network_error__SOCKET_TIMEOUT</string>
+    <string name="network_error__UNKNOWN">Oops, something went wrong.</string>
+
+</resources>
